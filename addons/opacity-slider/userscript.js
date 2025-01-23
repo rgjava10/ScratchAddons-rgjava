@@ -124,6 +124,7 @@ export default async function ({ addon, console, msg }) {
         state.scratchGui.editorTab.activeTabIndex === 1 &&
         !state.scratchGui.mode.isPlayerOnly &&
         state.scratchPaint.selectedItems.length > 0,
+
     });
     addon.tab.redux.initialize();
     if (typeof prevEventHandler === "function") {
